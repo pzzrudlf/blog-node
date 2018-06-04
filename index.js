@@ -22,7 +22,7 @@ const router = require('./routes');
 
 const app = new Koa();
 
-app.use(views(path.join(__dirname, 'views'), {  
+app.use(views(path.join(__dirname, 'views'), {
   map: { html: 'nunjucks' },
 })).use(serve(path.join(__dirname, 'public')));
 
